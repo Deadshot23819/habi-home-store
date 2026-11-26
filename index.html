@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f6f3ec" />
+    <meta name="description" content="Habi & Home — considered home pieces, made by Filipino hands." />
+    <title>Habi & Home — Made for a slower home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="announcement-bar">
+      <span>Made slowly, sent with care</span>
+      <span class="announcement-divider" aria-hidden="true">✳</span>
+      <span>Free delivery on orders over ₱3,000</span>
+    </div>
+
+    <header class="site-header" id="top">
+      <button class="icon-button menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+      </button>
+      <a class="brand" href="#top" aria-label="Habi and Home home">
+        <span class="brand-mark" aria-hidden="true">h<span>·</span></span>
+        <span class="brand-name">habi <i>&</i> home</span>
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <a href="#shop">Shop</a>
+        <a href="#collections">Collections</a>
+        <a href="#our-story">Our story</a>
+        <a href="#journal">Journal</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button search-toggle" id="searchToggle" type="button" aria-label="Search products">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8" /><path d="m16 16 4.5 4.5" /></svg>
+        </button>
+        <button class="cart-toggle" id="cartToggle" type="button" aria-label="Open shopping bag">
+          <span class="bag-label">Bag</span>
+          <span class="bag-count" id="bagCount">0</span>
+        </button>
+      </div>
+    </header>
+
+    <div class="search-panel" id="searchPanel" hidden>
+      <label for="searchInput">Looking for something lovely?</label>
+      <div class="search-field">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8" /><path d="m16 16 4.5 4.5" /></svg>
+        <input id="searchInput" type="search" placeholder="Try ceramics, baskets, candles…" autocomplete="off" />
+        <button type="button" class="text-button" id="clearSearch">Clear</button>
+      </div>
+    </div>
+
+    <main>
+      <section class="hero" aria-labelledby="heroTitle">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> A homegrown collection</p>
+          <h1 id="heroTitle">Make room for <em>the handmade.</em></h1>
+          <p class="hero-description">Thoughtful pieces for the everyday. Woven, shaped, and finished by makers across the Philippines.</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#shop">Explore the shop <span aria-hidden="true">↗</span></a>
+            <a class="quiet-link" href="#our-story">Meet the makers <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="hero-signoff">
+            <div class="maker-avatars" aria-hidden="true"><span>JM</span><span>AL</span><span>RC</span></div>
+            <p>Small batches, made with care<br /><strong>Always, by hand.</strong></p>
+          </div>
+        </div>
+        <div class="hero-photo-wrap">
+          <img class="hero-photo" src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1500&q=88" alt="Warm, natural living room with handmade home details" />
+          <div class="hero-image-note"><span class="note-sparkle">✳</span><span>Objects with a story<br /><small>Collection 01 · 2026</small></span></div>
+          <div class="hero-caption"><span>01 / 04</span><span>Quiet forms, everyday rituals</span></div>
+        </div>
+        <div class="hero-index" aria-hidden="true">01</div>
+      </section>
+
+      <section class="trust-strip" aria-label="Our promise">
+        <span>✳&nbsp; Thoughtfully made in the Philippines</span>
+        <span>✳&nbsp; Small-batch, always</span>
+        <span>✳&nbsp; Wrapped with less waste</span>
+        <span>✳&nbsp; A little more meaning, every day</span>
+      </section>
+
+      <section class="collections section-shell" id="collections" aria-labelledby="collectionTitle">
+        <div class="section-heading section-heading-row">
+          <div><p class="eyebrow">Find your feeling</p><h2 id="collectionTitle">Shop by <em>collection</em></h2></div>
+          <a class="quiet-link desktop-link" href="#shop">View all pieces <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="collection-grid">
+          <a class="collection-card collection-card-tall" href="#shop" data-collection="Woven">
+            <img src="https://images.unsplash.com/photo-1600166898405-da9535204843?auto=format&fit=crop&w=1000&q=85" alt="Warm woven textures and natural home accents" loading="lazy" />
+            <span class="collection-overlay"><small>01 / Tactile & true</small><strong>Woven wonders</strong><span class="circle-arrow" aria-hidden="true">↗</span></span>
+          </a>
+          <a class="collection-card" href="#shop" data-collection="Ceramics">
+            <img src="https://images.unsplash.com/photo-1493106641515-6b5631de4bb9?auto=format&fit=crop&w=900&q=85" alt="Artisan pottery in a quiet studio setting" loading="lazy" />
+            <span class="collection-overlay"><small>02 / Earth to hand</small><strong>Clay & form</strong><span class="circle-arrow" aria-hidden="true">↗</span></span>
+          </a>
+          <a class="collection-card" href="#shop" data-collection="Textiles">
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=85" alt="Soft natural textiles styled in a calm living space" loading="lazy" />
+            <span class="collection-overlay"><small>03 / Softly lived-in</small><strong>Quiet comforts</strong><span class="circle-arrow" aria-hidden="true">↗</span></span>
+          </a>
+        </div>
+      </section>
+
+      <section class="shop-section section-shell" id="shop" aria-labelledby="shopTitle">
+        <div class="section-heading section-heading-row shop-heading">
+          <div><p class="eyebrow">Made for keeping</p><h2 id="shopTitle">Good things, <em>found here.</em></h2><p class="section-intro">An edit of useful, beautiful things that feel right at home.</p></div>
+          <span class="product-total" id="productTotal">08 pieces</span>
+        </div>
+        <div class="shop-toolbar">
+          <div class="filter-list" id="filterList" aria-label="Filter products"></div>
+          <label class="sort-label" for="sortSelect">Sort <select id="sortSelect"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></label>
+        </div>
+        <div class="product-grid" id="productGrid" aria-live="polite"></div>
+        <div class="empty-state" id="emptyState" hidden><span>✳</span><h3>No pieces found just yet.</h3><p>Try another search or browse all of our handmade finds.</p><button class="text-button" type="button" id="resetFilters">Show all pieces →</button></div>
+        <div class="shop-footnote"><span>✳</span><span>Made in small batches. Your piece may have its own little variations.</span></div>
+      </section>
+
+      <section class="maker-feature" id="our-story" aria-labelledby="storyTitle">
+        <div class="maker-image">
+          <img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=1200&q=85" alt="A craftsperson shaping a handmade ceramic vessel" loading="lazy" />
+          <span class="image-stamp">Made<br />by hand</span>
+        </div>
+        <div class="maker-copy">
+          <p class="eyebrow">A little about us</p>
+          <h2 id="storyTitle">Good things take<br /><em>good hands.</em></h2>
+          <p>Habi & Home brings together home pieces made by independent Filipino makers. We look for honest materials, thoughtful details, and objects that become part of your everyday story.</p>
+          <p>We believe the things we keep should carry a little care with them—from the first sketch to the final knot.</p>
+          <a class="button button-outline" href="#journal">Our way of making <span aria-hidden="true">↗</span></a>
+          <div class="maker-signature"><span class="signature-mark">h.</span><span>Made close to home<br /><small>For the home you make.</small></span></div>
+        </div>
+        <span class="maker-side-note">In good company, since 2026</span>
+      </section>
+
+      <section class="quote-section" id="journal" aria-label="A note from our journal">
+        <div class="quote-decoration" aria-hidden="true">“</div>
+        <p class="eyebrow">A note to take home</p>
+        <blockquote>“The most meaningful things are often the ones we reach for every day.”</blockquote>
+        <span class="quote-author">From our little journal · On living with intention</span>
+        <a class="quiet-link" href="#our-story">Read our story <span aria-hidden="true">→</span></a>
+      </section>
+
+      <section class="newsletter-section section-shell" aria-labelledby="newsletterTitle">
+        <div class="newsletter-star" aria-hidden="true">✳</div>
+        <div><p class="eyebrow">A letter from home</p><h2 id="newsletterTitle">A little note, <em>now and then.</em></h2><p>New finds, maker stories, and small ways to make home feel more like you.</p></div>
+        <form class="newsletter-form" id="newsletterForm">
+          <label class="visually-hidden" for="newsletterEmail">Your email address</label>
+          <input id="newsletterEmail" type="email" placeholder="Your email address" required />
+          <button type="submit" aria-label="Subscribe to our newsletter">Join us <span aria-hidden="true">→</span></button>
+          <p id="newsletterMessage" class="form-message" aria-live="polite">Preview sign-up · no email is sent.</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-main">
+        <div class="footer-brand-block"><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true">h<span>·</span></span><span class="brand-name">habi <i>&</i> home</span></a><p>Home pieces with a little more heart.<br />Made by Filipino hands, for your everyday.</p><a class="footer-social" href="https://www.instagram.com/" target="_blank" rel="noreferrer">Follow along on Instagram ↗</a></div>
+        <div class="footer-links"><p class="footer-heading">Explore</p><a href="#shop">Shop all</a><a href="#collections">Collections</a><a href="#our-story">Our story</a><a href="#journal">Journal</a></div>
+        <div class="footer-links"><p class="footer-heading">Here to help</p><a href="mailto:hello@habihome.example">Contact us</a><a href="#footerNote">Delivery & returns</a><a href="#footerNote">Care guide</a><a href="#footerNote">FAQs</a></div>
+        <div class="footer-note" id="footerNote"><span class="footer-flower">✳</span><p>Keep it close.<br /><em>Keep it kind.</em></p><span class="footer-note-small">Thoughtfully made in the Philippines</span></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 Habi & Home · A student storefront concept</span><span><a href="https://unsplash.com/license" target="_blank" rel="noreferrer">Photo credits: Unsplash</a> · <a href="#top">Back to top ↑</a></span></div>
+    </footer>
+
+    <div class="drawer-scrim" id="drawerScrim" hidden></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-labelledby="cartTitle" aria-hidden="true" inert>
+      <div class="drawer-header"><div><p class="eyebrow">Your little collection</p><h2 id="cartTitle">Shopping bag <span id="drawerCount">(0)</span></h2></div><button class="icon-button close-drawer" id="closeCart" type="button" aria-label="Close shopping bag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg></button></div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-empty" id="cartEmpty"><span class="empty-bag">✳</span><h3>Your bag is taking a little rest.</h3><p>When a piece feels right, it will be here.</p><button class="button button-dark" type="button" id="continueShopping">Find a piece <span aria-hidden="true">→</span></button></div>
+      <div class="cart-bottom" id="cartBottom" hidden>
+        <div class="subtotal-row"><span>Subtotal</span><strong id="cartSubtotal">₱0</strong></div>
+        <p class="shipping-note" id="shippingNote">Shipping and delivery details can be confirmed with your order.</p>
+        <form id="checkoutForm" class="checkout-form">
+          <label for="customerName">Your name</label><input id="customerName" name="name" type="text" placeholder="First and last name" required />
+          <label for="customerEmail">Email address</label><input id="customerEmail" name="email" type="email" placeholder="you@example.com" required />
+          <button class="button button-dark checkout-button" type="submit">Continue with sample order <span aria-hidden="true">→</span></button>
+          <p class="demo-note">Student project preview · no payment is collected</p>
+        </form>
+      </div>
+    </aside>
+
+    <dialog class="quick-view-dialog" id="productDialog" aria-label="Product details"><button class="icon-button dialog-close" id="closeDialog" type="button" aria-label="Close product details"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg></button><div id="quickViewContent"></div></dialog>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
